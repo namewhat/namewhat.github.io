@@ -21,7 +21,8 @@
 
 <meta name="description" content="test for hexo blog">
 
-<meta name="author" content="I Am Root,1725246282@qq.com">
+<meta name="author"
+    content="I Am Root,1725246282@qq.com">
 
 
 <link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
@@ -98,13 +99,25 @@
             
             <div class="post-meta">
                 <div class="post-time">
+                    <time>2020-02</time>
+                </div>
+            </div>
+            <ul class="posts">
+                
+                <li>02-15 <a
+                        href="/2020/02/15/test/">测试文章</a></li>
+                
+            </ul>
+            
+            <div class="post-meta">
+                <div class="post-time">
                     <time>2020-01</time>
                 </div>
             </div>
             <ul class="posts">
                 
                 <li>01-09 <a
-                            href="/2020/01/09/hello-world/">Hello World</a></li>
+                        href="/2020/01/09/hello-world/">Hello World</a></li>
                 
             </ul>
             
@@ -117,21 +130,21 @@
 <div class="sidebar">
     <div class="well">
         <h2>Tag Cloud</h2>
-        
+        <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/markdown/" style="font-size: 15px;">markdown</a>
     </div>
 </div>
 
 <div class="sidebar">
     <div class="well">
         <h2>Archive</h2>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">2020年01月</a><span class="archive-list-count">1</span></li></ul>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">2020年02月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">2020年01月</a><span class="archive-list-count">1</span></li></ul>
     </div>
 </div>
 
 <div class="sidebar ">
     <div class="well">
         <h2>Recent</h2>
-        <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/01/09/hello-world/">Hello World</a></li></ul>
+        <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/02/15/test/">测试文章</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/09/hello-world/">Hello World</a></li></ul>
     </div>
 </div>
 
@@ -166,7 +179,7 @@
             <ul class="social-media">
                 
                 <li>
-                    <a title="github" href="https://github.com/https://github.com/namewhat/"
+                    <a title="github" href="https://github.com/namewhat"
                        target="_blank">
                         <i class="fa fa-github fa-2x"></i>
                     </a>
@@ -222,11 +235,11 @@
     $(document).ready(function () {
         $("img").each(function (index, item) {
             var p = $(item).parents()[0];
-            if($(p).is('a')) {
+            if ($(p).is('a')) {
                 $(p).fancybox();
                 return;
             }
-            $(p).append(function() {return "<a id='fancybox_id_"+index+"' href='" + $(item).attr("src") + "'></a>";});
+            $(p).append(function () { return "<a id='fancybox_id_" + index + "' href='" + $(item).attr("src") + "'></a>"; });
             item.remove();
             var fancyboxItem = $("#fancybox_id_" + index);
             fancyboxItem.append($(item));
