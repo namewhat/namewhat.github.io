@@ -101,3 +101,21 @@ pre .preprocessor
 
 pre .deletion {
   color: #dc322f; }
+
+.gutter pre .line {
+  color: greenyellow;
+}
+.code pre .line {
+  color: #fff;
+  font-size: 18px;
+}
+td.gutter {
+  width: 25px;
+}
+
+blockquote {
+    background-color: #fff;
+    color: #582e1a;
+    line-height: 30px;
+    font-size: 18px;
+}
