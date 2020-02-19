@@ -1,0 +1,37 @@
+一、关于搭建的流程
+    1. 创建仓库，http://namewhat.github.io；
+    2. 创建两个分支：master 与 blog；
+    3. 设置blog为默认分支（因为我们只需要手动管理这个分支上的blog网站文件）；
+    4. 拷贝仓库；
+        git clone git@github.com:namewhat/namewhat.github.io.git
+    5. 在本地http://namewhat.github.io文件夹下通过Git bash依次执行
+        npm install hexo
+        hexo init
+        npm install
+        npm install hexo-deployer-git（此时当前分支应显示为blog）;
+    6. 修改_config.yml中的deploy参数，分支应为master；
+    7. 依次执行以下命令，提交网站相关的文件；
+        git add .
+        git commit -m "..."
+        git push origin blog
+    8. 执行hexo g -d生成网站并部署到GitHub上。
+
+    这样一来，在GitHub上的http://namewhat.github.io仓库就有两个分支，
+    一个blog分支用来存放网站的原始文件，
+    一个master分支用来存放生成的静态网页。完美( •̀ ω •́ )y！
+
+二、关于日常的改动流程在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理。
+    1. 依次执行以下指令将改动推送到GitHub（此时当前分支应为master）；
+        git add .
+        git commit -m "..."
+        git push origin blog
+    2. 然后才执行hexo g -d发布网站到blog分支上。
+
+三、本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤：
+    1. 拷贝仓库（默认分支为blog）；
+        git clone git@github.com:namewhat/namewhat.github.io.git
+    2. 在本地新拷贝的http://namewhat.github.io文件夹下通过Git bash依次执行下列指令：
+        npm install hexo
+        npm install
+        npm install hexo-deployer-git
+        （记得，不需要hexo init这条指令）。
