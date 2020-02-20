@@ -100,4 +100,4 @@ theme: hexo-theme-clean-dark
 deploy:
   type: git
   repo:  git@github.com:namewhat/namewhat.github.io.git
-  branch: blog
+  branch: master
