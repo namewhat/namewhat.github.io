@@ -99,5 +99,5 @@ theme: hexo-theme-clean-dark
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo:  https://github.com/namewhat/namewhat.github.io
+  repo:  git@github.com:namewhat/namewhat.github.io.git
   branch: blog
