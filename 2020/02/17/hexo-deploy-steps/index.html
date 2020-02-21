@@ -8,15 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>hexo异地更新、换电脑更新||iamroot|may be right</title>
-<meta name="description" content="一、搭建的流程 创建仓库，http:&#x2F;&#x2F;namewhat.github.io  创建两个分支：master 与 blog  设置blog为默认分支（因为http:&#x2F;&#x2F;namewhat.github.io指向的默认分支上的网站文件）  拷贝仓库(“-b master”参数指定克隆分支)  1git clone -b master git@github.com:namewhat&#x2F;namewhat.gi">
+<meta name="description" content="一、搭建的流程 创建仓库，http:&#x2F;&#x2F;namewhat.github.io  创建两个分支：master 与 blog  master为默认分支，http:&#x2F;&#x2F;namewhat.github.io指向master分支上的网站文件）  拷贝仓库(“-b blog”参数指定克隆分支)  1git clone -b blog git@github.com:namewhat&#x2F;namewhat.githu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo异地更新、换电脑更新">
 <meta property="og:url" content="http://localhost.com/2020/02/17/hexo-deploy-steps/index.html">
 <meta property="og:site_name" content="iamroot">
-<meta property="og:description" content="一、搭建的流程 创建仓库，http:&#x2F;&#x2F;namewhat.github.io  创建两个分支：master 与 blog  设置blog为默认分支（因为http:&#x2F;&#x2F;namewhat.github.io指向的默认分支上的网站文件）  拷贝仓库(“-b master”参数指定克隆分支)  1git clone -b master git@github.com:namewhat&#x2F;namewhat.gi">
+<meta property="og:description" content="一、搭建的流程 创建仓库，http:&#x2F;&#x2F;namewhat.github.io  创建两个分支：master 与 blog  master为默认分支，http:&#x2F;&#x2F;namewhat.github.io指向master分支上的网站文件）  拷贝仓库(“-b blog”参数指定克隆分支)  1git clone -b blog git@github.com:namewhat&#x2F;namewhat.githu">
 <meta property="og:locale" content="cn">
 <meta property="article:published_time" content="2020-02-17T12:16:51.000Z">
-<meta property="article:modified_time" content="2020-02-21T08:07:19.860Z">
+<meta property="article:modified_time" content="2020-02-21T09:45:47.401Z">
 <meta property="article:author" content="I Am Root">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -27,10 +27,10 @@
 
 创建两个分支：master 与 blog
 
-设置blog为默认分支（因为http://namewhat.github.io指向的默认分支上的网站文件）
+master为默认分支，http://namewhat.github.io指向master分支上的网站文件）
 
-拷贝仓库(“-b master”参数指定克隆分支)
- 1git c">
+拷贝仓库(“-b blog”参数指定克隆分支)
+ 1git cl">
 
 <meta name="author"
     content="I Am Root,1725246282@qq.com">
@@ -85,13 +85,13 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 
-                <li><a href="/." class="current"><i class="icon-home"> Home</i></a></li>
+                <li><a href="/." class="current"><i class="icon-home"> Inicio</i></a></li>
                 
-                <li><a href="/archives/"><i class="icon-archive"> Archive</i></a></li>
+                <li><a href="/archives/"><i class="icon-archive"> Archivo</i></a></li>
                 
                 <li><a href="/atom.xml"><i class="icon-rss"> RSS</i></a></li>
                 
-                <li><a href="/about/"><i class="icon-about"> About</i></a></li>
+                <li><a href="/about/"><i class="icon-about"> Acerca de</i></a></li>
                 
             </ul>
         </div>
@@ -125,40 +125,40 @@
 </li>
 <li><p>创建两个分支：master 与 blog</p>
 </li>
-<li><p>设置blog为默认分支（因为<a href="http://namewhat.github.io" target="_blank" rel="noopener">http://namewhat.github.io</a>指向的默认分支上的网站文件）</p>
+<li><p>master为默认分支，<a href="http://namewhat.github.io" target="_blank" rel="noopener">http://namewhat.github.io</a>指向master分支上的网站文件）</p>
 </li>
-<li><p>拷贝仓库(“-b master”参数指定克隆分支)</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master git@github.com:namewhat/namewhat.github.io.git</span><br></pre></td></tr></table></figure>
+<li><p>拷贝仓库(“-b blog”参数指定克隆分支)</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b blog git@github.com:namewhat/namewhat.github.io.git</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在本地namewhat.github.io文件夹下通过Git bash依次执行</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo --save</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>依次执行以下git bash指令，推送代码文件到master分支，方便我们异地或换另一台电脑更新文章</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">'....'</span></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<li><p>依次执行以下git bash指令，推送代码文件到blog分支，方便我们异地或换另一台电脑更新文章</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">'....'</span></span><br><span class="line">git push -u origin HEAD:blog</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>修改_config.yml中的deploy参数为blog，我们需要把网站内容推送到默认分支; </p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repo:  https://github.com/namewhat/namewhat.github.io</span><br><span class="line">    branch: blog</span><br></pre></td></tr></table></figure>
+<li><p>_config.yml中的deploy参数应为master，我们需要把网站内容推送到默认分支; </p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repo:  https://github.com/namewhat/namewhat.github.io</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>部署网站，这条指令会把hexo编译好的静态文件推送到_config.yml中的deploy参数指向的分支，我们这里是“blog”分支</p>
+<li><p>部署网站，这条指令会把hexo编译好的静态文件推送到_config.yml中的deploy参数指向的分支，我们这里是“master”分支</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 <p>  这样一来，在GitHub上的 <a href="http://namewhat.github.io" target="_blank" rel="noopener">http://namewhat.github.io</a> 仓库就有两个分支，一个blog分支用来存放网站的原始文件，一个master分支用来存放生成的静态网页。Get( •̀ ω •́ )y！</p>
 </li>
 </ol>
 <h3 id="二、日常创作流程（更新文章、修改样式等等…）"><a href="#二、日常创作流程（更新文章、修改样式等等…）" class="headerlink" title="二、日常创作流程（更新文章、修改样式等等…）"></a>二、日常创作流程（更新文章、修改样式等等…）</h3><ol>
-<li><p>执行以下指令发布网站，推送到默认分支blog</p>
+<li><p>执行以下指令发布网站，推送到默认分支master</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>执行以下指令，推送代码到主分支master</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">'...'</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<li><p>执行以下指令，推送代码到主分支blog</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">'...'</span></span><br><span class="line">git push origin HEAD:blog</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
 <h3 id="三、电脑丢失了？电脑重装了？换台电脑更新？当然是搞得定"><a href="#三、电脑丢失了？电脑重装了？换台电脑更新？当然是搞得定" class="headerlink" title="三、电脑丢失了？电脑重装了？换台电脑更新？当然是搞得定"></a>三、电脑丢失了？电脑重装了？换台电脑更新？当然是搞得定</h3><ol>
 <li><p>clone仓库</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master git@github.com:namewhat/namewhat.github.io.git</span><br></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b blog git@github.com:namewhat/namewhat.github.io.git</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在clone的文件夹路径下，执行以下指令</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo --g</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
 <p> 然后就可以愉快的更新文章啦</p>
 </li>
 </ol>
@@ -228,21 +228,21 @@
                     
 <div class="sidebar">
     <div class="well">
-        <h2>Tag Cloud</h2>
+        <h2>Nube de etiquetas</h2>
         <a href="/tags/github/" style="font-size: 15px;">github</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a>
     </div>
 </div>
 
 <div class="sidebar">
     <div class="well">
-        <h2>Archive</h2>
+        <h2>Archivo</h2>
         <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">2020年02月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">2020年01月</a><span class="archive-list-count">1</span></li></ul>
     </div>
 </div>
 
 <div class="sidebar ">
     <div class="well">
-        <h2>Recent</h2>
+        <h2>Recientes</h2>
         <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/02/18/github-too-slow/">github速度太慢了？教你个小技巧，超级有用</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/02/17/hexo-deploy-steps/">hexo异地更新、换电脑更新</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/09/hello-world/">Hello World</a></li></ul>
     </div>
 </div>
