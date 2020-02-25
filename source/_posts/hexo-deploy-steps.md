@@ -23,7 +23,7 @@ categories:
           
 5. 在本地namewhat.github.io文件夹下通过Git bash依次执行
     ``` bash
-    npm install hexo --save
+    npm install hexo-cli --save
     hexo init
     npm install
     npm install hexo-deployer-git
